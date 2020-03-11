@@ -83,19 +83,19 @@ public class CityList {
      * @param new_city
      * @param old_city
      */
-//    public void replaceCity(City new_city, City old_city) {
-//        if (!hasCity(old_city)) {
-//            throw new IllegalArgumentException();
-//        }
-//        if (hasCity(new_city)) {
-//            throw new IllegalArgumentException();
-//        }
-//        for (City c : cities) {
-//            if (c.compareTo(old_city) == 0){
-//                cities.remove(c);
-//                cities.add(new_city);
-//                break;
-//            }
-//        }
-//    }
+    public void replaceCity(City new_city, City old_city) {
+        if (!hasCity(old_city)) {
+            throw new IllegalArgumentException();
+        }
+        if (hasCity(new_city)) {
+            throw new IllegalArgumentException();
+        }
+        for (City c : cities) {
+            if (c.compareTo(old_city) == 0){
+                cities.remove(c);
+                cities.add(new_city);
+                break;
+            }
+        }
+    }
 }
